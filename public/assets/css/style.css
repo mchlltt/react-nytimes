@@ -1,33 +1,19 @@
 html {
     position: relative;
-    min-height: 100%
-}
-
-.article,
-.response,
-.response-add-form {
-    margin-bottom: 40px;
-    width: 90%;
-}
-
-.response-section {
-    background: none rgba(255, 255, 255, .3);
-    height: 100%;
-    padding-top: 40px;
-    margin: 10px auto;
-    border-radius: 4px;
-    width: 90%;
+    min-height: 100%;
+    text-align: center;
 }
 
 body {
-    overflow-x: hidden;
     background: #444349 url('../img/stardust/stardust.png');
     margin-bottom: 62px;
+    color: white;
+    height: auto;
 }
 
 .page-header,
 footer {
-    margin-top: 0;
+    margin: 0;
     background: none rgba(255, 255, 255, .4);
 }
 
@@ -45,46 +31,25 @@ footer .container {
     align-items: center;
 }
 
-img {
+.result-div,
+.result-holder,
+.query {
+    background: rgba(255,255,255,.3);
+    border-radius: 7px;
+    margin: 20px auto;
+    padding: 8px;
     width: 90%;
-    border-radius: 4px;
+    max-width: 900px;
 }
 
-.col-sm-6 {
-    display: flex;
-    align-items: center;
-    height: 78px;
-}
-
-.buttons {
-    justify-content: flex-end;
-}
-
-.col-sm-6,
-.page-header,
-.page-header .container {
-    padding: 0;
+.form-control {
+    margin: 20px auto;
+    padding: 8px;
+    width: 90%;
+    max-width: 900px;
 }
 
 footer a,
 .page-header a {
     color: inherit;
-}
-
-small {
-    font-size: 14px !important;
-}
-
-h1 {
-    margin: 0;
-}
-
-.container {
-    width: 90%;
-}
-
-@media only screen and (max-width: 991px) {
-    img {
-        width: 100%;
-    }
 }

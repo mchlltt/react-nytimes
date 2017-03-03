@@ -1,7 +1,7 @@
 var React = require('react');
 
 var Query = require('./query');
-var Results = require('./results');
+var Results = require('./Results');
 
 var Search = React.createClass({
     render: function render() {
