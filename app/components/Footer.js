@@ -6,8 +6,8 @@ var Footer = React.createClass({
             <footer>
                 <div className="container">
                     <h5>
-                        Serving the most recent news from <a href="https://vox.com/">Vox.</a>
-                        <small> Made with <span className="glyphicon glyphicon-heart" aria-hidden="true"></span> by <a href="https://github.com/mchlltt">Mich Elliott</a>.</small>
+                        Search the archives of <a href="https://nytimes.com/">The New York Times</a>!
+                        Made with <span className="glyphicon glyphicon-heart"/> by <a href="https://github.com/mchlltt">Mich Elliott</a>.
                     </h5>
                 </div>
             </footer>

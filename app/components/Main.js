@@ -4,14 +4,13 @@ var Header = require('./Header');
 var Footer = require('./Footer');
 
 var Main = React.createClass({
-    render: function render() {
+    render: function () {
         return(
             <div>
                 <Header />
-                <h1>Hi</h1>
-                <main>
+                <div className="main-content">
                     {this.props.children}
-                </main>
+                </div>
                 <Footer />
             </div>
 

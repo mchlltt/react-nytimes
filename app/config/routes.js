@@ -12,6 +12,7 @@ var Route = router.Route;
 var Router = router.Router;
 
 // Include the hashHistory prop to handle routing client side without a server
+
 var hashHistory = router.hashHistory;
 
 // Include the IndexRoute (catch-all route)
@@ -19,8 +20,11 @@ var IndexRoute = router.IndexRoute;
 
 // Reference the high-level components
 var Main = require('../components/Main');
-var Query = require('../components/children/Query');
+var Search = require('../components/children/Search');
 var Saved = require('../components/children/Saved');
+var Query = require('../components/children/grandchildren/Query');
+var Results = require('../components/children/grandchildren/Results');
+var Panels = require('../components/children/Panels');
 
 // Export the Routes
 module.exports = (
@@ -28,12 +32,21 @@ module.exports = (
     // The high level component is the Router component
     <Router history={hashHistory}>
         <Route path="/" component={Main}>
-            {/* Show the appropriate component */}
-            <Route path="query" component={Query} />
+
+            <Route path="search" component={Search}>
+
+                <Route path="/" component={Query} />
+                <Route path="results" component={Results} />
+
+                {/* Show query by default */}
+                <IndexRoute component={Query} />
+
+            </Route>
+
             <Route path="saved" component={Saved} />
 
-            {/* Show query by default */}
-            <IndexRoute component={Query} />
+            {/* Show search by default */}
+            <IndexRoute component={Panels} />
         </Route>
     </Router>
 

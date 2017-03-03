@@ -1,6 +1,6 @@
 var React = require('react');
 
-React.createClass({
+var Header = React.createClass({
     render: function() {
         return(
             <div className="page-header">
@@ -13,3 +13,5 @@ React.createClass({
         );
     }
 });
+
+module.exports = Header;

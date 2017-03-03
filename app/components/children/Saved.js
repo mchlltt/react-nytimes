@@ -1,5 +1,5 @@
 var React = require('react');
-var Result = require('../Result');
+var Result = require('./grandchildren/Result');
 
 var Saved = React.createClass({
     render: function render() {

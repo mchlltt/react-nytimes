@@ -5,16 +5,16 @@ html {
 }
 
 body {
-    background: #444349 url('../img/stardust/stardust.png');
+    background: #D3BCCC url('../img/groovepaper/groovepaper.png');
     margin-bottom: 62px;
-    color: white;
-    height: auto;
+    height: calc(100vh - 62px);
+    color: #F4F1BB;
 }
 
 .page-header,
 footer {
     margin: 0;
-    background: none rgba(255, 255, 255, .4);
+    background: #6158A5;
 }
 
 footer {
@@ -34,12 +34,17 @@ footer .container {
 .result-div,
 .result-holder,
 .query {
-    background: rgba(255,255,255,.3);
+    background: #D3BCCC url('../img/groovepaper/groovepaper_@2X.png');
     border-radius: 7px;
     margin: 20px auto;
     padding: 8px;
     width: 90%;
     max-width: 900px;
+}
+
+.result-holder,
+.query {
+    background: #ED6A5A;
 }
 
 .form-control {
@@ -52,4 +57,37 @@ footer .container {
 footer a,
 .page-header a {
     color: inherit;
+}
+
+.panels {
+    height: 50vh;
+    max-height: 500px;
+    min-height: 100px;
+    background: #ED6A5A;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selection-panel {
+    height: 45vh;
+    max-height: 480px;
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 7px;
+    margin: 7px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.search-button {
+    width: 100px;
 }
