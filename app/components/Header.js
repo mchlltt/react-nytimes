@@ -3,10 +3,14 @@ var React = require('react');
 var Header = React.createClass({
     render: function() {
         return(
-            <div className="page-header">
+            <div className="page-header" role="navigation">
                 <div className="container">
-                    <div className="col-xs-12">
+                    <div className="col-xs-12 col-sm-6 title">
                         <h1><a href="/">React NYTimes</a></h1>
+                    </div>
+                    <div className="col-xs-12 col-sm-6 header-links">
+                        <h4><a href="#/search">Search</a> <span className="glyphicon glyphicon-search"/></h4>
+                        <h4><a href="#/saved">Saved</a> <span className="glyphicon glyphicon-bookmark"/></h4>
                     </div>
                 </div>
             </div>

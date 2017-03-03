@@ -95,3 +95,21 @@ footer a,
 .black-text {
     color: black;
 }
+
+.header-links {
+    text-align: right;
+    padding: 0;
+}
+
+.title {
+    text-align: left;
+    padding: 0;
+}
+
+.page-header .container {
+    padding: 0;
+}
+
+a:hover {
+    color: white;
+}
