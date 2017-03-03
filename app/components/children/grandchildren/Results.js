@@ -5,10 +5,15 @@ var Result = require('./Result');
 var Results = React.createClass({
     render: function render() {
         return(
-            <div className="result-holder">
-                <h3>Results</h3>
-                <Result url="http://google.com" title="a title" date="today" />
-                <Result url="http://amazon.com" title="second title" date="yesterday" />
+            <div>
+                <h1 className="black-text">Results</h1>
+                <div className="result-holder">
+                    {this.props.results.map(function(article, i) {
+                        return (
+                            <Result key={i} url={article.url} title={article.title} date={article.date} articleID={article.articleID} savedPage={false}/>
+                        );
+                    })}
+                </div>
             </div>
         )
     }

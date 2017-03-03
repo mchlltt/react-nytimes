@@ -7,7 +7,7 @@ html {
 body {
     background: #D3BCCC url('../img/groovepaper/groovepaper.png');
     margin-bottom: 62px;
-    height: calc(100vh - 62px);
+    height: auto;
     color: whitesmoke;
 }
 
@@ -31,13 +31,16 @@ footer .container {
     align-items: center;
 }
 
+.result-div {
+    background: #D3BCCC url('../img/groovepaper/groovepaper_@2X.png');
+    padding: 0;
+}
+
 .result-div,
 .result-holder,
 .query {
-    background: #D3BCCC url('../img/groovepaper/groovepaper_@2X.png');
     border-radius: 7px;
     margin: 20px auto;
-    padding: 8px;
     width: 90%;
     max-width: 900px;
 }
@@ -45,6 +48,7 @@ footer .container {
 .result-holder,
 .query {
     background: #ED6A5A;
+    padding: 8px;
 }
 
 .form-control {

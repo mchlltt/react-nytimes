@@ -22,8 +22,6 @@ var IndexRoute = router.IndexRoute;
 var Main = require('../components/Main');
 var Search = require('../components/children/Search');
 var Saved = require('../components/children/Saved');
-var Query = require('../components/children/grandchildren/Query');
-var Results = require('../components/children/grandchildren/Results');
 var Panels = require('../components/children/Panels');
 
 // Export the Routes
@@ -33,16 +31,7 @@ module.exports = (
     <Router history={hashHistory}>
         <Route path="/" component={Main}>
 
-            <Route path="search" component={Search}>
-
-                <Route path="/" component={Query} />
-                <Route path="results" component={Results} />
-
-                {/* Show query by default */}
-                <IndexRoute component={Query} />
-
-            </Route>
-
+            <Route path="search" component={Search} />
             <Route path="saved" component={Saved} />
 
             {/* Show search by default */}
