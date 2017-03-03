@@ -8,7 +8,7 @@ body {
     background: #D3BCCC url('../img/groovepaper/groovepaper.png');
     margin-bottom: 62px;
     height: calc(100vh - 62px);
-    color: #F4F1BB;
+    color: whitesmoke;
 }
 
 .page-header,
@@ -90,4 +90,8 @@ footer a,
 
 .search-button {
     width: 100px;
+}
+
+.black-text {
+    color: black;
 }

@@ -24,7 +24,7 @@ var Result = React.createClass({
         return(
             <div className="result-div">
                 <a href={this.props.url}>{this.props.title}</a>
-                <p>{this.props.date}</p>
+                <p className="black-text">{this.props.date}</p>
                 <button className="btn btn-info" onClick={this.handleClick}>{this.state.buttonText}</button>
             </div>
         )

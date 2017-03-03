@@ -4,7 +4,7 @@ var Search = React.createClass({
     render: function render() {
         return(
             <div>
-                <h1>Search</h1>
+                <h1 className="black-text">Search</h1>
                 {this.props.children}
             </div>
         )
