@@ -50,8 +50,8 @@ var Result = React.createClass({
         return(
             <div className="result-div panel panel-default" id={this.props.articleID}>
                 <div className="panel-body">
-                    <a href={this.props.url}>{this.props.title}</a>
-                    <p className="black-text">{this.props.date}</p>
+                    <a href={this.props.url} className="black-text"><h5>{this.props.title}</h5></a>
+                    <p className="black-text">Published {this.props.date}</p>
                 </div>
                 <div className="panel-footer">
                     <button className={this.state.button} onClick={this.handleClick}>{this.state.buttonText} <span className={this.state.glyphicon}/> </button>

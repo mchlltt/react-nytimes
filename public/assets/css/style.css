@@ -96,10 +96,6 @@ footer a,
     width: 100px;
 }
 
-.black-text {
-    color: black;
-}
-
 .header-links {
     text-align: right;
     padding: 0;
@@ -116,4 +112,9 @@ footer a,
 
 a:hover {
     color: white;
+}
+
+
+.black-text {
+    color: black !important;
 }

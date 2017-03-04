@@ -21,17 +21,19 @@ var helper = {
             // If we get a result, return objects with the desired parts of the responses.
             if (response.data.response.docs) {
                 var responses = [];
-                response.data.response.docs.forEach(function(doc) {
+
+                for (var i = 0; i < 5; i++) {
+                    var doc = response.data.response.docs[i];
                     var articleID = doc._id;
                     var article = {
                         title: doc.headline.main,
                         url: doc.web_url,
-                        date: doc.pub_date,
+                        date: doc.pub_date.split('T')[0],
                         articleID: articleID
                     };
-                    responses.push(article);
-                });
 
+                    responses.push(article);
+                }
                 return responses;
 
             } else {
