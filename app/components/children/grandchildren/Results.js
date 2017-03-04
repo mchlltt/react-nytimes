@@ -1,6 +1,6 @@
 var React = require('react');
 
-var Result = require('./Result');
+var Result = require('./greatgrandchildren/Result');
 
 var Results = React.createClass({
     render: function render() {

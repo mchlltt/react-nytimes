@@ -2,6 +2,7 @@ var React = require('react');
 
 var Query = require ('./grandchildren/Query');
 var Results = require('./grandchildren/Results');
+var Message = require('./grandchildren/Message');
 
 var helpers = require ('../utils/helpers');
 
@@ -13,7 +14,7 @@ var Search = React.createClass({
             end: '',
             results: [],
             searched: '',
-            error: ''
+            message: ''
         };
     },
     setTerms: function(term, begin, end) {
@@ -38,7 +39,7 @@ var Search = React.createClass({
                         this.setState({results: data});
                     }
                 } else {
-                    this.setState({error: 'No results found!'})
+                    this.setState({message: 'No results found!'})
                 }
             }.bind(this));
         }
@@ -50,6 +51,9 @@ var Search = React.createClass({
                 <Query setTerms={this.setTerms} />
                 {this.state.results.length > 0 &&
                     <Results results={this.state.results}/>
+                }
+                {this.state.message.length > 0 &&
+                    <Message message={this.state.message} />
                 }
             </div>
         )

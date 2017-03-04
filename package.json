@@ -1,27 +1,38 @@
 {
   "name": "react-nytimes",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "A React.js-based New York Times archive exploration tool.",
+  "main": "server.js",
   "dependencies": {
     "axios": "^0.15.3",
     "body-parser": "^1.16.1",
     "express": "^4.14.1",
-    "express-router": "0.0.1",
+    "express-router": "^0.0.1",
     "mongoose": "^4.8.5",
-    "react": "15.4.2",
-    "react-dom": "15.4.2",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
     "react-router": "^3.0.2",
+    "react-scripts": "^0.9.2",
     "request": "^2.79.0",
     "serve-favicon": "^2.4.0"
   },
-  "devDependencies": {
-    "react-scripts": "0.9.2"
-  },
+  "devDependencies": {},
   "scripts": {
-    "dev": "webpack -w & node server",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+    "dev": "webpack -w & node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mchlltt/react-nytimes.git"
+  },
+  "keywords": [
+    "reactjs"
+  ],
+  "author": "Mich Elliott",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mchlltt/react-nytimes/issues"
+  },
+  "homepage": "https://github.com/mchlltt/react-nytimes#readme"
 }

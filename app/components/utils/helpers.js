@@ -19,7 +19,7 @@ var helper = {
 
         return axios.get(queryURL + qs).then(function(response) {
             // If we get a result, return objects with the desired parts of the responses.
-            if (response.data.response.docs) {
+            if (response.data.response.docs.length > 0) {
                 var responses = [];
 
                 for (var i = 0; i < 5; i++) {

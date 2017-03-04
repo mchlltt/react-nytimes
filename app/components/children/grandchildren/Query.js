@@ -1,4 +1,5 @@
 var React = require('react');
+var ReactDOM = require('react-dom');
 
 var Query = React.createClass({
 
@@ -37,7 +38,6 @@ var Query = React.createClass({
             }
         );
     },
-
     render: function () {
         return(
             <div className="query">
