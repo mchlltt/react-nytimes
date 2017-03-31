@@ -9,8 +9,8 @@ var Header = React.createClass({
                         <h1><a href="/">React NYTimes</a></h1>
                     </div>
                     <div className="col-xs-12 col-sm-6 header-links">
-                        <h4><a href="#/search">Search</a> <span className="glyphicon glyphicon-search"/></h4>
-                        <h4><a href="#/saved">Saved</a> <span className="glyphicon glyphicon-bookmark"/></h4>
+                        <h4><a href="#/search">Search <span className="glyphicon glyphicon-search"/></a></h4>
+                        <h4><a href="#/saved">Saved <span className="glyphicon glyphicon-bookmark"/></a></h4>
                     </div>
                 </div>
             </div>
